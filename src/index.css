@@ -1,0 +1,17 @@
+
+.card {
+  background: lightgray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 500px;
+}
+
+.overlay {
+  width: 300px;
+  height: 200px;
+  background: lightcyan;
+  border: 1px solid grey;
+}

@@ -1,0 +1,23 @@
+nav {
+ background-color: darkgray;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list li {
+  padding: 20px;
+  color: #fff;
+}
+
+.nav-list li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  color: #fff;
+}
