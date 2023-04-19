@@ -1,4 +1,5 @@
 import {useRef} from 'react'
+import './card.css';
 
 function CardForm(props) {
   const idInputRef = useRef();
@@ -26,25 +27,31 @@ function CardForm(props) {
     props.onAddCard(cardData);
   }
   return (
-    <form onSubmit={submitHandler}>
-      <div>
-        <label htmlFor="id">Card id</label>
-        <input id="id" type="text" ref={idInputRef} required/>
+    <div class="page-wrapper container-fluid">
+      {/* <h2>Add new painiting here!</h2> */}
+      <div class="wrapper">
+        <div class="row">
+          <div class="img-wrapper col-sm-3">            
+          </div>
+          <div class="form-wrapper col-sm-9">
+            <h3 class="title">Painting Info</h3>
+            <form onSubmit={submitHandler}>
+              <div className="input-grp">
+                <input id="id" type="text" className="form-control" placeholder="Id" ref={idInputRef} required/>
+              </div>
+              <div className="input-grp">
+                <input id="image" type="url" className="form-control" placeholder="URL" ref={imageInputRef} required/>
+              </div>
+              <div className="input-grp">
+                <input id="title" type="text" className="form-control" placeholder="Title" ref={titleInputRef} required/>
+              </div>
+              <textarea id="description" className="input-grp form-control" rows="5" cols="50" placeholder="Description" ref={descriptionInputRef} required/>
+              <button className="btn-submit btn btn-primary">Add new Card</button>
+            </form>        
+          </div>
+        </div>
       </div>
-      <div>
-        <label htmlFor="image">Card Image</label>
-        <input id="image" type="url" ref={imageInputRef} required/>
-      </div>
-      <div>
-        <label htmlFor="title">Card Title</label>
-        <input id="title" type="text" ref={titleInputRef} required/>
-      </div>
-      <div>
-        <label htmlFor="description">Card description</label>
-        <input id="description" type="text" rows="5" ref={descriptionInputRef} required/>
-      </div>
-      <button>Add new Card</button>
-    </form>
+    </div>
   )
 }
 

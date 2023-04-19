@@ -4,22 +4,6 @@ import './Header.css';
 function Header() {
   return (
 	<>
-		{/* <nav>
-			<ul className="nav-list">
-				<li>
-					<Link to="/" >Home</Link>
-				</li>
-				<li>
-					<Link to="/profile" >Profile</Link>
-				</li>
-				<li>
-					<Link to="/paintings" >All Paintings</Link>
-				</li>
-				<li>
-					<Link to="/addnewcard" >Add new card</Link>
-				</li>
-			</ul>
-		</nav> */}
 		<nav className="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
 			<div className="container-fluid">
         <a className="navbar-brand" href="#">
