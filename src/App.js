@@ -1,11 +1,11 @@
 import Todo from './components/Todo';
 import { Route, Routes } from 'react-router-dom';
-import HomePage from './pages/Home';
-import ProfilePage from './pages/Profile';
-import PaintingsPage from './pages/Paintings';
-import Header from './navigation/Header';
-import PageNotFound from './pages/PageNotFound';
-import NewCardPage from './pages/NewCardPage';
+import HomePage from './components/pages/Home';
+import ProfilePage from './components/pages/Profile';
+import PaintingsPage from './components/pages/Paintings';
+import Header from './components/navigation/Header';
+import PageNotFound from './components/pages/PageNotFound';
+import NewCardPage from './components/pages/NewCardPage';
 function App() {
   return (
     <div>

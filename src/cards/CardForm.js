@@ -1,6 +1,6 @@
 import {useRef} from 'react'
 
-function CardForm() {
+function CardForm(props) {
   const idInputRef = useRef();
   const imageInputRef = useRef();
   const titleInputRef = useRef();
@@ -23,6 +23,7 @@ function CardForm() {
     console.log(cardData);
 
     //call POST API
+    props.onAddCard(cardData);
   }
   return (
     <form onSubmit={submitHandler}>

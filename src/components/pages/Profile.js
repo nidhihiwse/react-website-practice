@@ -7,14 +7,14 @@ function ProfilePage() {
 	};
 
   return (
-  <>
+
     <section id="profile-section">
       <div className="profile">
         <img className="profile-img" src={Nidhi.imageUrl} alt={'Photo of ' + Nidhi.name}/>
         <h1>{Nidhi.name}</h1>
       </div> 
     </section>
-  </>
+
   )
 }
 

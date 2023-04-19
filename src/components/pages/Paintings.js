@@ -1,7 +1,8 @@
 
 // import CardList from '.src/pages/CardList';
 
-import CardList from "../cards/CardList";
+import CardList from "../../cards/CardList";
+import { useState, useEffect } from "react";
 
 function PaintingsPage() {
   const DUMMY_DATA = [
@@ -42,10 +43,39 @@ function PaintingsPage() {
       description: "This is card6 image"
     }
   ]
+  const [isLoading, setIsLoading] = useState(true);
+  const [dataLoaded, setDataLoaded] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+    fetch('https://react-practice-5da0e-default-rtdb.asia-southeast1.firebasedatabase.app/cards.json'
+    ).then(response => {
+      return response.json();
+    }).then(data => {
+        const cards = [];
+        for(const key in data) {
+          const card = {
+            id: key,
+            ...data[key]
+          };
+          cards.push(card);
+        }
+        setIsLoading(false);
+        setDataLoaded(cards);
+    });
+  }, []);
+
+  if(isLoading) {
+    return (
+    <div>Data is loading....</div>
+    )
+  } 
+
+
   return (
     <section>
       <h1>All Paintings</h1>
-      <CardList cards={DUMMY_DATA}/>
+      <CardList cards={dataLoaded}/>
     </section>
   )
 }

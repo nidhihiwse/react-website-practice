@@ -1,0 +1,18 @@
+nav.bg-dark {
+  background-color: #7f294b !important;
+}
+
+nav .nav-link {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav .nav-link:hover, .nav-link:active , .nav-link:focus{
+  color: white;
+}
+
+nav .navbar-text {
+  color: #fff;
+  font-size: 22px;
+  margin-left: 10px;
+}
