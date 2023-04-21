@@ -27,14 +27,14 @@ function CardForm(props) {
     props.onAddCard(cardData);
   }
   return (
-    <div class="page-wrapper container-fluid">
+    <div className="page-wrapper container-fluid">
       {/* <h2>Add new painiting here!</h2> */}
-      <div class="wrapper">
-        <div class="row">
-          <div class="img-wrapper col-sm-3">            
+      <div className="wrapper">
+        <div className="row">
+          <div className="img-wrapper col-sm-3">            
           </div>
-          <div class="form-wrapper col-sm-9">
-            <h3 class="title">Painting Info</h3>
+          <div className="form-wrapper col-sm-9">
+            <h3 className="title">Painting Info</h3>
             <form onSubmit={submitHandler}>
               <div className="input-grp">
                 <input id="id" type="text" className="form-control" placeholder="Id" ref={idInputRef} required/>

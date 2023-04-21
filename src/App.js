@@ -6,6 +6,7 @@ import PaintingsPage from './components/pages/Paintings';
 import Header from './components/navigation/Header';
 import PageNotFound from './components/pages/PageNotFound';
 import NewCardPage from './components/pages/NewCardPage';
+import Favourites from './components/pages/Favourites';
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
         <Route path={"profile"} element={<ProfilePage/>}/>
         <Route path={"paintings"} element={<PaintingsPage/>}/>
         <Route path={"addnewcard"} element={<NewCardPage/>}/>
+        <Route path={"favourite"} element={<Favourites/>}/>
       </Routes>
     </div>
   );
