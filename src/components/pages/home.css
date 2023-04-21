@@ -1,0 +1,12 @@
+.home-bg-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh;
+  background: url(./home-bg.jpeg) top center/cover no-repeat;
+}
+
+.home-bg-wrapper h1 {
+  color: #fff;
+}

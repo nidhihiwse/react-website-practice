@@ -1,8 +1,10 @@
+import './home.css';
+
 function HomePage() {
   return (
-  <>
-    <h1>Welcome!!!</h1>
-  </>
+  <section class="home-bg-wrapper">
+    <h1><i>Welcome to - Tinted Art..</i></h1>
+  </section>
   )
 }
 

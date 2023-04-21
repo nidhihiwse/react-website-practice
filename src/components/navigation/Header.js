@@ -14,14 +14,19 @@ function Header() {
           <li className="nav-item">
             <Link className="nav-link" to="/" >Home</Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link className="nav-link" to="/profile" >Profile</Link>
+          </li> */}
+          <li className="nav-item">
+            <Link className="nav-link" to="/paintings" >Paintings</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/paintings" >All Paintings</Link>
+            <Link className="nav-link" to="/addnewcard" >Add painting</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/addnewcard" >Add new card</Link>
+            <Link className="nav-link" to="/favourite" >favourite 
+            {/* <img alt="heart" src="./like.png" /> */}
+            </Link>
           </li>
 				</ul>
 			</div>
