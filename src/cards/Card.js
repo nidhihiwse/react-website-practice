@@ -11,13 +11,13 @@ function Card(props) {
     if(itemIsFavourite) {
 		favouriteCtx.removeFavourite(props.id);
 	} else {
-		// add to db
-		addToFav({
-			id:props.id,
-			title:props.title,
-			image:props.image,
-			description:props.description,
-		})
+		// // add to db
+		// addToFav({
+		// 	id:props.id,
+		// 	title:props.title,
+		// 	image:props.image,
+		// 	description:props.description,
+		// })
 		// add locally
 		favouriteCtx.addFavouirte({
 			id:props.id,
@@ -28,19 +28,7 @@ function Card(props) {
 	}
   }
 
-  function addToFav(cardData) {
-    fetch("https://react-practice-5da0e-default-rtdb.asia-southeast1.firebasedatabase.app/paintings.json",
-    {
-      method: "POST",
-      body: JSON.stringify(cardData),
-      headers: {
-        'Content-Type' : 'application/json'
-      }
-    } 
-    )
-  }
-
-//   function removeFromFav(cardData) {
+//   function addToFav(cardData) {
 //     fetch("https://react-practice-5da0e-default-rtdb.asia-southeast1.firebasedatabase.app/paintings.json",
 //     {
 //       method: "POST",
@@ -49,9 +37,7 @@ function Card(props) {
 //         'Content-Type' : 'application/json'
 //       }
 //     } 
-//     ).then(()=>{
-//       navigate('/', {replace:true});
-//     })
+//     )
 //   }
 
   return (   	

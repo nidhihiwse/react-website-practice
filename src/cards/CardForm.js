@@ -24,7 +24,7 @@ function CardForm(props) {
     console.log(cardData);
 
     //call POST API
-    props.onAddCard(cardData);
+    // props.onAddCard(cardData);
   }
   return (
     <div className="page-wrapper container-fluid">

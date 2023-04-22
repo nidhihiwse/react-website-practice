@@ -29,7 +29,6 @@ function Header() {
           <li className="nav-item">
             <Link className="nav-link" to="/favourite" >favourite 
             <span>{favouriteCtx.totalFavourites}</span>
-            {/* <img alt="heart" src="./like.png" /> */}
             </Link>
           </li>
 				</ul>
