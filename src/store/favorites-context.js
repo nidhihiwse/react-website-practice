@@ -25,7 +25,7 @@ const FavouritesContext = createContext({
     //as above instead of concating add a function-latest snapshot that is executed for you by react immediately.  if you don't use function it may happen that the current favourite Status is not updates as the last state change may be in process. 
     setUserFavourites((preUserFavourites) => {
       return preUserFavourites.concat(favouriteCard);
-    })
+    });
   }
 
   // filter method is an inbuilt method which takes function as an arugement amd return a new array.

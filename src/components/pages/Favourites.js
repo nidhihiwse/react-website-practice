@@ -15,7 +15,6 @@ function Favourites() {
     content = <CardList cards={favouriteCtx.favourites}/>
   } 
 
-  console.log(content);
   return (
     <section className="favourite-section-wrapper">
       <h1>My Favourites</h1>
