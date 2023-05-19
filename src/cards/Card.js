@@ -46,9 +46,9 @@ function Card(props) {
 		<div className="bottom">
 			<h2>{props.title}</h2>
 			<p>{props.description}</p>
-			<button onClick={toggleFavClick}>
+			{/* <button onClick={toggleFavClick}>
 				{itemIsFavourite ? 'Remove from favourite' :'Add to favourite'}
-			</button>
+			</button> */}
 		</div>
 	</div>
   )

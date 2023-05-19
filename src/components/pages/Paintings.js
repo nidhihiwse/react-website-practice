@@ -10,6 +10,7 @@ function PaintingsPage() {
   const [dataLoaded, setDataLoaded] = useState([]);
 
   useEffect(() => {
+    console.log("componentDidMount");
     setIsLoading(true);
     fetch('https://react-practice-5da0e-default-rtdb.asia-southeast1.firebasedatabase.app/cards.json'
     ).then(response => {
@@ -26,6 +27,9 @@ function PaintingsPage() {
         setIsLoading(false);
         setDataLoaded(cards);
     });
+    // return () => {
+    //   console.log("unmounted");
+    // }
   }, []);
 
   if(isLoading) {
@@ -34,8 +38,7 @@ function PaintingsPage() {
       <img alt="" src="./loading.gif" />
     </div>
     )
-  } 
-
+  }
 
   return (
     <section className="section-wrapper">
